@@ -13,8 +13,18 @@
 
   <body>
     <div class="main-container">
-      <div class="main">
-        <div class="main-title">Countdown to Stony Brook!</div>
+      <div class="main pre-click">
+        <div class="main-title">Countdown to *!</div>
+        <form class='form'>
+          <input type="text" placeholder='MM' class='month'/>
+          <input type="text" placeholder='DD' class='day'/>
+          <input type="text" placeholder='YYYY' class='year'/>
+        </form>
+        <div class="error-message">Enter a valid future date</div>
+        <button type='button' class='submit'>Submit</button>
+      </div>
+      <div class="main post-click">
+        <div class="main-title">Time Remaining:</div>
         <div class="timer">
           <div class="timer-days">
             <div class="days-title">Days</div>
