@@ -1,3 +1,12 @@
+function zeroPad(number) {
+  number = String(number);
+  if(number.length > 1) {
+    return number;
+  } else {
+    return '0'.concat(number);
+  }
+};
+
 function timeUntil(deadline) {
   var ms = Date.parse(deadline) - Date.now();
   var seconds = Math.floor((ms/1000) % 60);
