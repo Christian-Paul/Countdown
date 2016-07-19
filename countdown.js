@@ -1,3 +1,21 @@
+function shuffleArray(arr) {
+  for(var i = 0; i < arr.length; i++) {
+    var randomIndex = Math.floor(Math.random() * arr.length);
+    var temp = arr[i];
+    arr[i] = arr[randomIndex];
+    arr[randomIndex] = temp;
+  }
+  return arr;
+}
+
+function cycleDeadlines() {
+  var deadlines = ['Christmas', 'Halloween', 'Thanksgiving', 'Birthday', 'Vacation', 'Apocalypse'];
+  var randomizedDeadlines = shuffleArray(deadlines);
+  
+  
+  
+};
+
 function zeroPad(number) {
   number = String(number);
   if(number.length > 1) {

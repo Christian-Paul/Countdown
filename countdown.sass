@@ -11,16 +11,31 @@ body, html
   align-items: center
   
   .pre-click
+    .main-title
+      display: flex
+  
     form
       input
         text-align: center
         font-size: 2.5em
       
+      ::-webkit-input-placeholder
+        color: rgba(115, 20, 20, 0.35)
+      
       .day, .month
         width: 2em
+        margin-right: 0.15em
       
       .year
         width: 4em
+        
+    .submit
+      margin-top: 1.5em
+      height: 2.5em
+      width: 6em
+      background-color: brown
+      color: white
+      border: none
 
   .main
     width: 80vw
